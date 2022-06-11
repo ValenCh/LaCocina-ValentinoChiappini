@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: #b85c07;
+}
+
+.grilla-sec {
+    display: grid;
+    grid-template-columns: .2fr 1.5fr;
+    grid-template-rows: 1.3fr .2fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav main"
+        "footer footer";
+}
+
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+/* ------------- NAV ------------- */
+
+.nav {
+    grid-area: nav;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #680303;
+}
+
+.nav img {
+    width: 70px;
+    margin-top: 50px;
+    background-color: none;
+    border-radius: 50%;
+}
+
+.nav h1 {
+    position: absolute;
+    padding-top: 5px;
+    color: beige;
+    font-family: 'Square Peg', cursive;
+    font-size: 40px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.navHijo ul {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.navHijo li {
+    list-style: none;
+    padding: 20px;
+    padding-top: 40px;
+    height: 30px;
+    text-align: center;
+}
+
+.navHijo a {
+    background-color: #e7cdab;
+    color: black;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+
+/* ---------------MAIN INDEX --------------- */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* ------------ SECTION 1 ------------*/
+.section1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 340px;
+}
+
+.section1 img {
+    max-height: 200px;
+}
+
+.s1R-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section1 h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    padding: 30px;
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+
+/* ------------ SECTION 2 ------------*/
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.table th {
+    border: 1px solid;
+    border-color: black;
+}
+
+.table td {
+    border: 1px solid;
+    border-color: black;
+    margin: 3px;
+    padding: 10px;
+}
+
+#especialesDia {
+    text-align: center;
+}
+
+.table {
+    margin: 10%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+/* ------------ SECTION 3 ------------*/
+.section3 {
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section3 img {
+    max-height: 300px;
+    margin-bottom: 40px;
+}
+
+.hs {
+    margin-bottom: 8rem;
+    padding: 10px;
+    padding-left: 20px;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+.hs h3 {
+    margin: 10px;
+    padding-left: 70px;
+    font-size: 30px;
+}
+
+.hs li {
+    margin: 15px;
+    font-size: 18px;
+}
+
+
+/*  --------- MENU ---------- */
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 33rem;
+
+}
+
+.menu h2 {
+    position: absolute;
+    margin-bottom: 25rem;
+    margin-left: 33rem;
+    font-size: 40px;
+    color: #c7c2c2;
+    text-decoration: underline;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.entradas,
+.menuInfantil,
+.comidas {
+    background-color: #aab3b996;
+    margin: 15px;
+    padding: 10px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.menu h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* ------------ SERVICIOS ------------ */
+
+.servicios {
+    display: flex;
+    height: 40rem;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.servicios ul {
+    list-style: none;
+}
+
+.delivery,
+.catering,
+.viandas {
+    background-color: #dad5d581;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.servicios h2 {
+    text-decoration: underline;
+    padding: 5px;
+}
+
+/* ------------ NOSOTROS ----------- */
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    height: 33rem;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.gps,
+.contacto,
+.info {
+    background-color: #c7c2c28e;
+    padding: 30px;
+    width: 40rem;
+    border-radius: 40px;
+    margin: 15px;
+    margin-left: 10rem;
+}
+
+/* ------------ COMENTARIOS ------------- */
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-left: 22rem;
+    background-color: #dad5d581;
+    width: 30rem;
+    height: 40rem;
+    padding: 25px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.comentarios h2 {
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    justify-content: space-around;
+
+}
+
+
+
+/* ------------ FOOTER ------------- */
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+}
+
+.footer ol {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.footer li {
+    list-style: none;
+    margin: 30px;
+}
+
+.footer i {
+    font-size: 30px;
+    color: gray;
+}
+
+.footer h4 {
+    margin: 70px;
+}
+
+
+@media (max-width: 576px) {
+
+    p,
+    li {
+        font-size: 17px;
+    }
+
+    /* GRILLA */
+    .grilla-sec {
+        display: grid;
+        grid-auto-columns: 2fr;
+        grid-template-columns: 2fr;
+        grid-template-rows: .2fr 5fr .45fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "nav"
+            "main"
+            "footer";
+        /* background-color: #b9b72f; */
+
+
+
+    }
+
+    /* NAV */
+    .nav {
+        /* background-color: #9e1616; */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        position: static;
+    }
+
+    .nav img {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        width: 70px;
+    }
+
+
+
+    .navHijo ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .navHijo li {
+        padding: 10px;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    /* INDEX */
+    /* section1 */
+    .s1R-img img {
+        max-width: 200px;
+        margin: 10px;
+    }
+
+    /* section2 */
+
+    /* section3 */
+    .section3 {
+        flex-direction: column;
+    }
+
+    .hs {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section3 img {
+        padding-bottom: 10px;
+        margin: 10px;
+        max-width: 250px;
+    }
+
+    /* MENU */
+    .menu h2 {
+        margin: 0;
+        padding: 0;
+        position: static;
+        margin-left: 43%;
+        padding-bottom: 40px;
+
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        padding-bottom: 400px;
+    }
+
+    .menu h3 {
+        font-size: 25px;
+    }
+
+    /* SERVICIOS */
+    .delivery,
+    .catering,
+    .viandas {
+        margin: 20px;
+    }
+
+    /* NOSOTROS */
+    .nosotros {
+        margin: 0;
+        padding: 0;
+    }
+
+    .gps,
+    .contacto,
+    .info {
+        margin: 0;
+        margin: 30px;
+    }
+
+    /* COMENTARIOS */
+    .comentarios {
+        margin: 0;
+        margin: 0 0 40% 45px;
+    }
+}
